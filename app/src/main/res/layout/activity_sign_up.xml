@@ -63,7 +63,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            android:singleLine="true"
             android:drawableStart="@drawable/baseline_person_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_your_name" />
@@ -85,7 +84,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:singleLine="true"
             android:drawableStart="@drawable/baseline_email_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_your_email" />
@@ -108,7 +106,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:singleLine="true"
             android:drawableStart="@drawable/baseline_lock_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_your_password" />
@@ -131,7 +128,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:singleLine="true"
             android:drawableStart="@drawable/baseline_lock_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_confirm_password" />
