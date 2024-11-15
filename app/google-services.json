@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "730718528697",
+    "project_id": "uptask-app",
+    "storage_bucket": "uptask-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730718528697:android:f7082e343cfd4630392768",
+        "android_client_info": {
+          "package_name": "com.example.uptask"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRptIMbg5H4RfZpF-yKuIRmpuiDdDrIWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
