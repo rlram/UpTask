@@ -19,4 +19,9 @@
     <string name="reset_password">Reset password</string>
     <string name="enter_the_email_linked_with_your_account">Enter the email linked with your account.</string>
     <string name="submit">SUBMIT</string>
+    <string name="user_icon">User Icon</string>
+    <string name="hi">Hi,</string>
+    <string name="calendar_icon">Calendar Icon</string>
+    <string name="today_s_progress">Today\'s progress</string>
+    <string name="add_icon">Add Icon</string>
 </resources>
