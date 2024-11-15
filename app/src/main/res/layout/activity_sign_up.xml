@@ -62,6 +62,8 @@
             android:id="@+id/etTextNameSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
+            android:singleLine="true"
             android:drawableStart="@drawable/baseline_person_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_your_name" />
@@ -82,6 +84,8 @@
             android:id="@+id/etTextEmailAddressSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
             android:drawableStart="@drawable/baseline_email_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_your_email" />
@@ -103,6 +107,8 @@
             android:id="@+id/etTextPasswordSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
             android:drawableStart="@drawable/baseline_lock_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_your_password" />
@@ -124,6 +130,8 @@
             android:id="@+id/etTextConfirmPasswordSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
             android:drawableStart="@drawable/baseline_lock_24"
             android:drawableTint="?attr/colorPrimary"
             android:hint="@string/enter_confirm_password" />
@@ -142,5 +150,19 @@
         app:layout_constraintEnd_toEndOf="@+id/textInputLayout4"
         app:layout_constraintStart_toStartOf="@+id/textInputLayout4"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout4" />
+
+    <ProgressBar
+        android:id="@+id/progressBarSignUp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:indeterminateTint="@color/white"
+        android:background="?attr/colorPrimary"
+        android:padding="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
