@@ -24,4 +24,9 @@
     <string name="calendar_icon">Calendar Icon</string>
     <string name="today_s_progress">Today\'s progress</string>
     <string name="add_icon">Add Icon</string>
+    <string name="create_new_task">Create New Task</string>
+    <string name="task_name">Task Name</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="create_task">CREATE TASK</string>
 </resources>
