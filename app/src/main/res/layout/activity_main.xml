@@ -1,19 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="15dp">
+        
+        <ImageView
+            android:id="@+id/ivUserProfile"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_gravity="center"
+            android:background="@drawable/round_background"
+            android:contentDescription="@string/user_icon"
+            android:src="@drawable/icon_user"
+            app:tint="?attr/colorPrimary" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hi"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="22sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/btnCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/calendar_icon"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_calendar_today_24"
+            android:background="@null"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/calendar_icon"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_notifications_24"
+            android:layout_marginStart="20dp"
+            android:background="@null"
+            app:tint="?attr/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/round_background"
+        android:backgroundTint="?attr/colorPrimary"
+        android:layout_margin="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvDateDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/grey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/today_s_progress"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnPrimary"/>
+
+        <TextView
+            android:id="@+id/taskCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/grey"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/taskCompletionPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="80sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnPrimary"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"/>
+
+        <ProgressBar
+            android:id="@+id/progressBarMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/tvNoTasks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_tasks"
+            android:textColor="?attr/colorPrimary"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/btnAddNewTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/add_icon"
+            android:src="@drawable/baseline_add_24"
+            android:background="@drawable/round_background"
+            android:backgroundTint="?attr/colorSecondary"
+            android:padding="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            app:tint="?attr/colorOnSecondary" />
+    </RelativeLayout>
+
+</LinearLayout>

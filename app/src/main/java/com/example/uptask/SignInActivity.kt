@@ -17,14 +17,12 @@ import com.google.android.material.textfield.TextInputLayout
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
-import com.google.firebase.auth.ktx.auth
 
 class SignInActivity : AppCompatActivity() {
     private lateinit var etTextEmail: EditText
     private lateinit var etTextPassword: EditText
     private lateinit var tvForgotPass: TextView
     private lateinit var btnSignIn: Button
-    private lateinit var btnSignInWithGoogle: CardView
     private lateinit var tvSignUp: TextView
     private lateinit var progressBar: ProgressBar
     private lateinit var firebaseAuth: FirebaseAuth
@@ -45,7 +43,6 @@ class SignInActivity : AppCompatActivity() {
         etTextPassword = findViewById(R.id.etTextPasswordSignIn)
         tvForgotPass = findViewById(R.id.tvForgotPassword)
         btnSignIn = findViewById(R.id.btnSignInSignIn)
-        btnSignInWithGoogle = findViewById(R.id.btnSignInWithGoogle)
         tvSignUp = findViewById(R.id.tvSignUpSignIn)
         progressBar = findViewById(R.id.progressBarSignIn)
 

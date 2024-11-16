@@ -12,7 +12,6 @@
           "package_name": "com.example.uptask"
         }
       },
-      "oauth_client": [],
       "api_key": [
         {
           "current_key": "AIzaSyBRptIMbg5H4RfZpF-yKuIRmpuiDdDrIWo"
@@ -20,7 +19,6 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
         }
       }
     }
